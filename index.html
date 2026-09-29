@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cocktail App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="search-area">
+    <input id="searchInput" type="text" placeholder="Search by name or first letter" />
+    <button id="searchBtn">Search</button>
+  </div>
+  <div class="container">
+    <div class="left">
+      <div id="drinkList" class="drink-grid"></div>
+    </div>
+    <div class="right">
+      <h2>Total Cart: <span id="count">0</span></h2>
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>SL</th>
+            <th>Img</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody id="cartList">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button id="closeModal">X</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
